@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Lato";
+        font-weight: 400;
+        src: url("../fonts/Lato/Lato-Regular.ttf");
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Lato";
+        font-weight: 700;
+        src: url("../fonts/Lato/Lato-Bold.ttf");
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Lato";
+        font-weight: 900;
+        src: url("../fonts/Lato/Lato-Black.ttf");
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Lato";
+        font-weight: 300;
+        src: url("../fonts/Lato/Lato-Light.ttf");
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Ubuntu";
+        font-weight: 400;
+        src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Ubuntu";
+        font-weight:500;
+        src: url("../fonts/Ubuntu/Ubuntu-Medium.ttf");
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Ubuntu";
+        font-weight: 700;
+        src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "Ubuntu";
+        font-weight: 300;
+        src: url("../fonts/Ubuntu/Ubuntu-Light.ttf");
+        font-style: normal;
+    }
+
+    @layer components {
+
+        .row{
+            @apply flex flex-wrap -mx-4
+        }
+
+        .max-width{
+            max-width: 1140px;
+        }
+
+        .btn-shadow{
+            box-shadow: 0 0 15px #0ef;
+        }
+
+        .btn-shadow-2{
+            box-shadow: 0 0 6px #0ef;
+        }
+    }
+}
